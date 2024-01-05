@@ -29,3 +29,13 @@ def is_square(n):
 
 def is_square(n):    
     return n >= 0 and (n**0.5) % 1 == 0
+
+import math
+def is_square(n):    
+
+    if n < 0:
+        return False
+
+    sqrt = math.sqrt(n)
+    
+    return sqrt.is_integer()
